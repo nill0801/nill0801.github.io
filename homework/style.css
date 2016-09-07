@@ -1,0 +1,33 @@
+section{
+  background-color: #fff;
+  border-radius: 50px;
+   margin-top: 50px;
+}
+div{
+  border-style:dashed;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  background-color: #333333;
+}
+h1{
+  text-align: center;
+}
+.intro p{
+  font-size: 14px;
+}
+.home img{
+  width: auto;
+  height: 200px;
+}
+nav{
+  text-align: center;
+}
+nav a{
+ color: #24EFEA;
+ text-decoration: none;
+ display: inline-block;
+height: 30px;
+line-height: 30px;
+
+}
