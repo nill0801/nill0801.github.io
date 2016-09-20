@@ -1,5 +1,7 @@
 body{
   background-image: url('../imgges/true.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 div{
   width: 90%;
