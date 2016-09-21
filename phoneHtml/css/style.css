@@ -43,7 +43,7 @@ html,body{
 .footer{
   display: flex;
   position: absolute;
-  margin-top: 610px;
+  bottom:5px;
   left: 0px;
   width: 100%;
 }
