@@ -23,7 +23,7 @@ function captureCityCode(){
        var retData =data.retData;
        var citycode =retData.cityCode;
        $.ajax({
-         url:'http://apis.baidu.com/apistore/weatherservice/recentweathers',
+         url:'https://apis.baidu.com/apistore/weatherservice/recentweathers',
          method:'get',
          headers:{
            apikey:'cecee65cc1037e289f23d552d9a1e4e8'
@@ -93,7 +93,7 @@ function captureCityCode(){
      }
    }
  };
- var url ='http://apis.baidu.com/apistore/weatherservice/cityinfo';
+ var url ='https://apis.baidu.com/apistore/weatherservice/cityinfo';
  url+='?cityname='+cityNa;
 http.open('get',url,true);
 http.setRequestHeader('apikey','cecee65cc1037e289f23d552d9a1e4e8');
