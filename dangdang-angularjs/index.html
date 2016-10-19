@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>当当热搜榜</title>
-  <link rel="stylesheet" href="assets/lib/weui/weui.css" media="screen" title="no title">
+  <link rel="stylesheet" href="http://cdn.bootcss.com/weui/0.4.3/style/weui.min.css">
+  <link rel="stylesheet" href="http://cdn.bootcss.com/jquery-weui/0.8.0/css/jquery-weui.min.css">
   <style media="screen">
     html,body{
       height: 100%;
@@ -14,29 +15,30 @@
 </head>
 <body>
   <div class="weui_tab" ng-app="app" ng-controller="mainController">
+    <div class="weui_tab_bd">
+      <div class="weui_tabbar">
+
       <div ng-view></div>
 
-        <div class="weui_tab_bd">
-        <div class="weui_tabbar">
-          <a href="#tab1" class="weui_tabbar_item weui_bar_item_on">
+          <a href="#" class="weui_tabbar_item weui_bar_item_on">
             <div class="weui_tabbar_icon">
               <img src="assets/images/icon_nav_button.png" alt="">
             </div>
             <p class="weui_tabbar_label">首页</p>
           </a>
-          <a href="#tab2" class="weui_tabbar_item">
+          <a href="#/blog" class="weui_tabbar_item">
             <div class="weui_tabbar_icon">
               <img src="assets/images/icon_nav_cell.png" alt="">
             </div>
             <p class="weui_tabbar_label">我的blog</p>
           </a>
-          <a href="#tab3" class="weui_tabbar_item">
+          <a href="#/dangdang" class="weui_tabbar_item">
             <div class="weui_tabbar_icon">
               <img src="assets/images/icon_nav_toast.png" alt="">
             </div>
             <p class="weui_tabbar_label">当当热销</p>
           </a>
-          <a href="#tab4" class="weui_tabbar_item">
+          <a href="#aboutme" class="weui_tabbar_item">
             <div class="weui_tabbar_icon">
               <img src="assets/images/icon_nav_dialog.png" alt="">
             </div>
@@ -44,8 +46,12 @@
           </a>
         </div>
 
-
+     </div>
   </div>
+  <script src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/jquery-weui/0.8.0/js/jquery-weui.min.js"></script>
+
+
   <script src="assets/lib/angular.js"></script>
   <script src="assets/lib/angular-route.js"></script>
   <script src="assets/app.js"></script>
