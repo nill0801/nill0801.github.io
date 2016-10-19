@@ -2,7 +2,7 @@ app.factory('commonService',['$http',function($http){
   var service={};
   service.getDate=function(type,callBack){
     $http({
-      url:'../../data/book_'+type+'.json',
+      url:'/dangdang-angularjs/data/book_'+type+'.json',
       method:'get'
     })
     .then(function(res){
