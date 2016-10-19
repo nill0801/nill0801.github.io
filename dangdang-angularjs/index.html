@@ -13,38 +13,41 @@
     }
   </style>
 </head>
-    <body  ng-app="app" ng-controller="mainController">
-      <div class="weui_tab ">
-        <div class="weui-tab__panel">
-          <div ng-view style="background-color:#999999"></div>
-        </div>
-        <div class="weui_tabbar">
-          <a href="#/" class="weui_tabbar_item weui_bar_item_on">
+<body>
+  <div class="weui_tab" ng-app="app" ng-controller="mainController">
+    <div class="weui_tab_bd">
+      <div class="weui_tabbar">
+
+      <div ng-view></div>
+
+          <a href="#" class="weui_tabbar_item weui_bar_item_on">
             <div class="weui_tabbar_icon">
-              <img src="./views/images/shouye.png" alt="">
+              <img src="assets/images/icon_nav_button.png" alt="">
             </div>
             <p class="weui_tabbar_label">首页</p>
           </a>
           <a href="#/blog" class="weui_tabbar_item">
             <div class="weui_tabbar_icon">
-              <img src="./views/images/blog.png" alt="">
+              <img src="assets/images/icon_nav_cell.png" alt="">
             </div>
-            <p class="weui_tabbar_label">博客</p>
+            <p class="weui_tabbar_label">我的blog</p>
           </a>
-          <a href="#/book" class="weui_tabbar_item">
+          <a href="#/dangdang" class="weui_tabbar_item">
             <div class="weui_tabbar_icon">
-              <img src="./views/images/book.png" alt="">
+              <img src="assets/images/icon_nav_toast.png" alt="">
             </div>
-            <p class="weui_tabbar_label">图书</p>
+            <p class="weui_tabbar_label">当当热销</p>
           </a>
           <a href="#/aboutme" class="weui_tabbar_item">
             <div class="weui_tabbar_icon">
-              <img src="./views/images/aboutme.png" alt="">
+              <img src="assets/images/icon_nav_dialog.png" alt="">
             </div>
-            <p class="weui_tabbar_label">关于我</p>
+            <p class="weui_tabbar_label">我</p>
           </a>
         </div>
-      </div>
+
+     </div>
+  </div>
 
 
   <script src="assets/lib/angular.js"></script>
