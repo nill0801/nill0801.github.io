@@ -5,30 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>当当热搜榜</title>
+  <style media="screen">
+    html,body{
+      height: 100%;
+    }
+  </style>
 </head>
 <body>
   <div ng-app="app" ng-controller="mainController">
     <div ng-view></div>
     <div class="weui-tab">
     <div class="weui-tab__panel">
-      <div ng-view style="background-color:#999999;">
       </div>
     </div>
     <div class="weui-tabbar">
         <a href="#/" class="weui-tabbar__item weui-bar__item_on">
-            <img src="./images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
-            <p class="weui-tabbar__label">微信</p>
+            <img src="./assets//images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+            <p class="weui-tabbar__label">首页</p>
         </a>
-        <a href="#/" class="weui-tabbar__item">
-            <img src="./images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
-            <p class="weui-tabbar__label">通讯录</p>
+        <a href="#/blog" class="weui-tabbar__item">
+            <img src="./assets//images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+            <p class="weui-tabbar__label">我的blog</p>
         </a>
-        <a href="#/list" class="weui-tabbar__item">
-            <img src="./images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
-            <p class="weui-tabbar__label">发现</p>
+        <a href="#/dangdang" class="weui-tabbar__item">
+            <img src="./assets//images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+            <p class="weui-tabbar__label">当当热销</p>
         </a>
         <a href="#/about_me" class="weui-tabbar__item">
-            <img src="./images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+            <img src="./assets//images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
             <p class="weui-tabbar__label">我</p>
         </a>
     </div>
