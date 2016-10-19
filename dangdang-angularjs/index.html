@@ -9,6 +9,31 @@
 <body>
   <div ng-app="app" ng-controller="mainController">
     <div ng-view></div>
+    <div class="weui-tab">
+    <div class="weui-tab__panel">
+      <div ng-view style="background-color:#999999;">
+      </div>
+    </div>
+    <div class="weui-tabbar">
+        <a href="#/" class="weui-tabbar__item weui-bar__item_on">
+            <img src="./images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+            <p class="weui-tabbar__label">微信</p>
+        </a>
+        <a href="#/" class="weui-tabbar__item">
+            <img src="./images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+            <p class="weui-tabbar__label">通讯录</p>
+        </a>
+        <a href="#/list" class="weui-tabbar__item">
+            <img src="./images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+            <p class="weui-tabbar__label">发现</p>
+        </a>
+        <a href="#/about_me" class="weui-tabbar__item">
+            <img src="./images/icon_tabbar.png" alt="" class="weui-tabbar__icon">
+            <p class="weui-tabbar__label">我</p>
+        </a>
+    </div>
+</div>
+
   </div>
   <script src="assets/lib/angular.js"></script>
   <script src="assets/lib/angular-route.js"></script>
